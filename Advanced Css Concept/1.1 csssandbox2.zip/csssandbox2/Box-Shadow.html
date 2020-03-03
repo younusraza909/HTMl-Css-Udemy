@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+
+        .box{
+            padding: 1rem;
+            margin: 1rem;
+            background: coral;
+            color: white;
+
+
+            /*offset-x | offset-y | color*/
+            box-shadow: 10px 10px teal;
+             /*offset-x | offset-y |Blur| color*/
+             box-shadow: 10px 10px 20px teal;
+
+           /*Negative Value*/
+           box-shadow: -5px -5px 20px teal;
+
+           /*offset-x | offset-y |Blur |spread-radius| color*/
+
+           box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.3);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, vero.</p>
+        </div>
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, vero.</p>
+        </div>
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, vero.</p>
+        </div>
+    </div>
+</body>
+</html>
