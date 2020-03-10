@@ -6,13 +6,14 @@
   box-sizing: border-box;
 }
 
-html {
+html,body{
   background-color: #fff;
   color: #555;
   font-family: "Lato", "Arial", sans-serif;
   font-weight: 300;
   font-size: 20px;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 
 /* Resuable Code */
@@ -116,6 +117,23 @@ h3 {
 .btn-full:hover,
 .btn-full:active {
   border: 1px solid #cf6d17;
+}
+
+
+/* Links */
+a:link,
+a:visited{
+  color: #e67e22;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #e67e22;
+  transition: border-bottom 0.5s;
+}
+
+a:hover,
+a:active{
+  color: #555;
+  border-bottom: 1px solid transparent;
 }
 /* ---------------------------------------------------------------------------------------------------- */
 /* Header Component */
@@ -222,3 +240,134 @@ header {
 .section-meals {
   padding: 0;
 }
+
+/* Cities Section */
+.main-cities{
+  display: flex;
+}
+
+.section-cities .box{
+  width: 25%;
+}
+.section-cities .box img{
+  width: 100%;
+}
+
+.section-cities .box ul{
+  list-style: none;
+}
+
+.section-cities .fa,
+.section-cities .fab{
+  color: #cf6d17;
+  font-size: 15px;
+  padding-right: 10px;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Div Section How it Works */
+
+#section-How-it-works{
+  background-color: linear-gradient(#e5e5e5,#fff); 
+} 
+.how-it-work-div{
+  display: flex;
+  margin-top: 50px;
+  justify-content: flex-start;
+}
+
+.how-it-work-div:first-child{
+  margin-top: 30px;
+}
+
+.how-it-work-div:last-child{
+  margin-top: 70px;
+}
+.app-screen{
+  width: 40%;
+  margin-left: 35%;
+}
+
+.work-step{
+  margin-bottom: 50px;
+}
+
+.work-step:last-of-type{
+  margin-bottom: 80px;
+}
+
+.work-step div{
+  float: left;
+  color: #e67e22;
+  border: 2px solid #e67e22;
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  padding: 5px;
+  font-size: 150%;
+  margin-right: 25px;
+}
+
+.btn-app img{
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.btn-app:link,
+.btn-app:visited{
+  border: 0;
+}
+
+/* Testimonials Section */
+#testimonials{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../css/images/back-customers.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.customer-section-div{
+  display: flex;
+}
+#testimonials h2{
+  color: #fff;
+}
+
+.customer cite img{
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  vertical-align: middle;
+
+}
+.customer blockquote{
+  padding: 2%;
+  font-style: italic;
+  line-height: 145%;
+  position: relative;
+  margin-top: 40px;
+}
+
+.customer blockquote::before{
+  /* We Will use ISo here for double qoutes */
+  content: "\201C";
+  font-size: 400%;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+
+.customer cite{
+  font-size: 90%;
+  margin-top: 25px;
+  display: block;
+}
+
+.customer{
+  color: #fff;
+}
+
