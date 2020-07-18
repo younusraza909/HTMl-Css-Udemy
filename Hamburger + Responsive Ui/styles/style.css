@@ -34,7 +34,7 @@ body {
 }
 
 .nav-list {
-  width: 50%;
+  width: 70%;
   display: flex;
   align-items: center;
 }
@@ -48,6 +48,7 @@ body {
   text-decoration: none;
   color: #fff;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 20px;
 }
 
 .nav-list li a:hover {
@@ -55,7 +56,7 @@ body {
 }
 
 .rightNav {
-  width: 50%;
+  width: 30%;
   text-align: right;
   padding: 0 23px;
 }
@@ -193,7 +194,7 @@ body {
 }
 
 .form {
-  max-width: 500px;
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -242,4 +243,56 @@ body {
   background-color: white;
   border: 2px solid black;
   color: black;
+}
+
+.text-footer {
+  text-align: center;
+  padding: 18px 0;
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+.burger {
+  position: absolute;
+  cursor: pointer;
+  top: 15px;
+  right: 5%;
+  display: none;
+}
+
+.line {
+  width: 33px;
+  background-color: #fff;
+  height: 3px;
+  margin: 5px 3px;
+}
+
+/* Media Query */
+@media only screen and (max-width: 1140px) {
+  .nav-list {
+    flex-direction: column;
+  }
+
+  .navbar {
+    flex-direction: column;
+    transition: all 0.3s ease-out;
+  }
+
+  .rightNav {
+    text-align: center;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .h-nav {
+    height: 72px;
+  }
+
+  .v-class {
+    opacity: 0;
+  }
 }
