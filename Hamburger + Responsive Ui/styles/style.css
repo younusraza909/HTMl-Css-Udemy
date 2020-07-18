@@ -17,6 +17,11 @@
 
 .navbar {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  cursor: pointer;
 }
 
 .nav-list {
@@ -42,6 +47,7 @@
 .rightNav {
   width: 50%;
   text-align: right;
+  padding: 0 23px;
 }
 
 #search {
@@ -55,4 +61,66 @@
   background: rgba(0, 0, 0, 0.7) url("../img/bg.jpg");
   background-size: cover;
   background-blend-mode: darken;
+}
+
+.firstSection {
+  height: 100vh;
+}
+
+.box-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 70%;
+  margin: auto;
+  height: 80%;
+}
+
+.firsthalf {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.secondhalf {
+  width: 30%;
+}
+
+.secondhalf img {
+  width: 90%;
+  padding: 2px 0;
+  border: 4px solid white;
+  border-radius: 150px;
+  display: block;
+  margin: auto;
+}
+
+.text-big {
+  font-size: 41px;
+}
+.text-small {
+  font-size: 18px;
+}
+
+.btn {
+  padding: 8px 20px;
+  margin: 7px 0;
+  border: 2px solid white;
+  border-radius: 8px;
+  background: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-sm {
+  padding: 6px 10px;
+  vertical-align: middle;
+  margin: 7px 0;
+  border: 2px solid white;
+  border-radius: 8px;
+  background: none;
+  color: #fff;
+  cursor: pointer;
 }
