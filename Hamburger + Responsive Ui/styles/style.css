@@ -3,7 +3,14 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
 .logo {
   width: 20%;
   display: flex;
@@ -114,7 +121,15 @@
   border-radius: 8px;
   background: none;
   color: #fff;
+  display: inline-block;
+  outline: none;
   cursor: pointer;
+  transition: 1s border ease-in-out;
+}
+
+.btn:hover {
+  color: white;
+  border: none;
 }
 
 .btn-sm {
@@ -162,4 +177,69 @@
 
 .sectionSubTag {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact {
+  background-color: #f6f5f4;
+  height: 85vh;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.contact {
+  padding: 10px 0;
+}
+
+.form {
+  max-width: 500px;
+  margin: auto;
+}
+
+.form input {
+  width: 100%;
+  font-size: 16px;
+  padding: 5px;
+  border: 2px solid grey;
+  margin: 20px 0;
+  border-radius: 6px;
+  outline: none;
+}
+
+.btn-block {
+  background-color: black;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 6px;
+  font-size: 18px;
+  transition: 0.5s border ease-in;
+  border: none;
+}
+
+.form textarea {
+  width: 100%;
+  height: 200px;
+  border: 2px solid grey;
+  margin: 20px 0;
+  color: black;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.contactBtn {
+  padding: 8px 20px;
+  margin: 7px 0;
+  border-radius: 8px;
+  background: black;
+  color: #fff;
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-block:hover {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
 }
