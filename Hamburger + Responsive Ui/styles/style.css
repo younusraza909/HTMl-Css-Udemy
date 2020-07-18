@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -38,6 +40,7 @@
 .nav-list li a {
   text-decoration: none;
   color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .nav-list li a:hover {
@@ -123,4 +126,40 @@
   background: none;
   color: #fff;
   cursor: pointer;
+}
+
+.secRight {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 80%;
+  margin: auto;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.left {
+  flex-direction: row-reverse;
+}
+
+.paras {
+  padding: 0 65px;
+}
+
+.thumbnail {
+  width: 1500px;
+}
+
+.thumbnail img {
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid grey;
+}
+
+.sectiontag {
+  padding: 16px 0;
+}
+
+.sectionSubTag {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
